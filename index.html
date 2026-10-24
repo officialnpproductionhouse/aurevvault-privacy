@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUREV Vault – Privacy Policy</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.6;color:#1b1b1f;background:#fff}
+  h1{font-size:1.7rem;margin-bottom:.2em} h2{font-size:1.05rem;margin-top:1.6em;text-transform:uppercase;letter-spacing:.04em}
+  .muted{color:#666} a{color:#0b57d0}
+  @media (prefers-color-scheme:dark){body{background:#14161a;color:#e8e8ec}.muted{color:#a0a0aa}a{color:#8ab4f8}}
+</style>
+</head>
+<body>
+<h1>AUREV Vault – Privacy Policy</h1>
+<p class="muted">Effective date: 24 October 2026 · Applies to AUREV Vault for Android (com.aurev.vault), version 1.0.0</p>
+
+<h2>Who we are</h2>
+<p>AUREV Vault is an offline password vault made by NP Production House. Contact for privacy questions: <a href="mailto:officialnpproductionhouse@gmail.com">officialnpproductionhouse@gmail.com</a>.</p>
+
+<h2>Summary</h2>
+<p>Your items are encrypted on your device. The app has no account, no analytics, no advertising and no server, and it does not request internet access. We do not receive your data and cannot read it or recover it for you.</p>
+
+<h2>What the app stores, and where</h2>
+<ul>
+<li><b>Vault items</b> (passwords, two-factor setup keys, cards, notes, identities, Wi-Fi details, licence keys, bank account details, crypto wallet details, and items in sections you create, with their titles, usernames, websites and notes) are encrypted with AES-256-GCM using a random vault key and stored in the app's private storage on your device. Some metadata, such as the number of items and their encrypted sizes, is not hidden.</li>
+<li><b>Your master password</b> is never stored. The app derives a key from it with Argon2id and uses that key only to unlock the vault key.</li>
+<li><b>Fingerprint or face unlock (optional)</b>: Android shows the system prompt and handles your biometric data; it never reaches the app or us. If you enable it, a second copy of the vault key is sealed by a key held in the Android Keystore. Android discards that key if fingerprints are added or changed, and you then use your master password, which is also required again at least every 7 days. Turning the setting off deletes the sealed copy.</li>
+<li><b>App settings</b> (auto-lock time, clipboard-clear time, screen-capture protection, sound effects, tap sounds, colour theme) are stored locally and contain no vault content.</li>
+<li>The app asks Android to exclude its data from Android cloud backup and device-to-device transfer, so the vault is not copied by those features.</li>
+</ul>
+
+<h2>What we collect</h2>
+<p>The only Android permissions the app requests are the biometric ones (USE_BIOMETRIC and the older USE_FINGERPRINT), used solely to show the system fingerprint or face prompt. We collect nothing through the app. It contains no analytics, crash-reporting, advertising or account code and does not send data to any server. Google Play and your device manufacturer may collect information about installs and devices under their own policies, outside our control.</p>
+
+<h2>No password recovery</h2>
+<p>There is no recovery key, no reset by email and no backdoor, and we hold no copy of your key. <b>If you forget your master password, your vault cannot be opened by anyone, including us.</b> The only way back is an encrypted backup file whose passphrase you still remember. Resetting the vault deletes the data on the device.</p>
+
+<h2>Backups you export and restore</h2>
+<ul>
+<li>Exporting a backup is something you start. The app writes an encrypted .aurev file to the location you choose in the Android file picker, protected with Argon2id and AES-256-GCM under a separate backup passphrase you set. We do not receive the file or the passphrase.</li>
+<li>If you save the file in a folder that another app synchronises (for example a cloud drive), that app may upload the encrypted file under its own terms. Use a long, unique backup passphrase. Delete old backup files yourself.</li>
+<li>Restoring a backup replaces every item in the vault after you confirm. A wrong passphrase or damaged file is rejected without changing the vault. If you lose the backup passphrase, that backup cannot be opened.</li>
+</ul>
+
+<h2>Clipboard</h2>
+<p>When you copy a password, code or note, the app marks the clip as sensitive where Android supports it and asks Android to clear it after the delay you set. This is best effort only: Android cannot guarantee removal from other apps, keyboard clipboards or clipboard history.</p>
+
+<h2>Screen capture</h2>
+<p>By default the app blocks screenshots, screen recording and the recent-apps preview while it is open. You can turn this off in Settings.</p>
+
+<h2>Sound effects</h2>
+<p>Short sounds generated for this app are on by default and can be turned off in Settings. The app does not use the microphone or collect audio.</p>
+
+<h2>Limits of the protection</h2>
+<ul>
+<li>A compromised device is not protected: malware, a hostile keyboard or accessibility service, or someone with your unlocked phone can see what you see.</li>
+<li>A weak master password can be guessed if an attacker obtains the vault files. Choose a long, unique one.</li>
+<li>Backup files, cloud copies and clipboard contents are outside the app's control once they leave it.</li>
+<li>Restoring an older backup replaces newer items; the app does not detect that a backup is older.</li>
+<li>The app has not been independently audited and carries no independent security certification.</li>
+<li>Uninstalling the app deletes the vault on that device. Keep a backup you can open.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app is not directed to children under 18 and collects no information from anyone.</p>
+
+<h2>Your rights</h2>
+<p>Because we hold no personal data about you, there is nothing for us to access, correct, export or delete. You control all data on your device and in the files you export.</p>
+
+<h2>Changes to this policy</h2>
+<p>We will publish changes on this page and update the effective date. If a future version adds any network feature, this policy and the app will say so before release.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:officialnpproductionhouse@gmail.com">officialnpproductionhouse@gmail.com</a></p>
+</body>
+</html>
